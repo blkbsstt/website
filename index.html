@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
 
-<title>Blake Bassett @ UIUC</title>
+  <title>Blake Bassett @ UIUC</title>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
-<link href="bower_components/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
-<link href="css/bib-publication-list.css" rel="stylesheet">
-<link href="css/custom.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+  <link href="bower_components/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+  <link href="css/bib-publication-list.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
-<nav class="hidden-xs navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand hidden">Blake Bassett</p>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button"
+          data-toggle="collapse" data-target="#navbar-collapse-items"
+          style="padding: 5px 10px">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="fa fa-bars fa-lg"></span>
+        </button>
+        <a class="navbar-brand hidden">Blake Bassett</a>
       </div>
-      <div id="navbar-scrollspy">
-        <ul class="nav navbar-nav navbar-right">
-          <li style="display:none"><a href="#top"></a></li>
-          <li><a href="#about"><i class="fa fa-user fa-lg"></i></a></li>
-          <li><a href="#publications"><i class="fa fa-book fa-lg"></i></a></li>
-          <li><a href="#schedule"><i class="fa fa-calendar fa-lg"></i></a></li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbar-collapse-items">
+        <div id="navbar-scrollspy">
+          <ul class="nav navbar-nav navbar-right">
+            <li style="display:none"><a href="#top"></a></li>
+            <li>
+              <a href="#about">
+                <i class="fa fa-user fa-lg"></i>
+                <p class="visible-xs-inline navbar-text navbar-label">About Me</p>
+              </a>
+            </li>
+            <li>
+              <a href="#publications">
+                <i class="fa fa-book fa-lg"></i>
+                <p class="visible-xs-inline navbar-text navbar-label">Publications</p>
+              </a>
+            </li>
+            <li>
+              <a href="#schedule">
+                <i class="fa fa-calendar fa-lg"></i>
+                <p class="visible-xs-inline navbar-text navbar-label">Schedule</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div><!-- /.container -->
   </nav>
-
   <div class="jumbotron" id="top">
     <div class="container">
-      <h1>Blake Bassett</h1>
-      <p class="lead">Software Engineering PhD Student @ UIUC</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Blake Bassett</h1>
+          <p class="lead">Software Engineering PhD Student @ UIUC</p>
+        </div>
+      </div>
     </div>
   </div>
 

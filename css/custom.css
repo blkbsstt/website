@@ -11,6 +11,7 @@ a {
 a:hover {
    color: #e73;
 }
+
 a:visited {
    color: #e73;
 }
@@ -45,42 +46,58 @@ body {
 .navbar-default .navbar-brand {
   color: #fff;
 }
+
+.navbar-default .navbar-toggle {
+  color: #fff;
+}
+
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #fff;
 }
+
 .navbar-default .navbar-text {
   color: #fff;
 }
+
 .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
   background-color: #e73;
 }
+
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #fff;
   background-color: #e73;
 }
+
 .navbar-default .navbar-toggle {
   border-color: #e73;
 }
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #e73;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #fff;
 }
+
 .navbar-default .navbar-link {
   color: #fff;
 }
+
 .navbar-default .navbar-link:hover {
   color: #fff;
 }
@@ -108,4 +125,18 @@ body {
 
 .fc-event-container > a:visited {
   color: #fff
+}
+
+.navbar-label {
+  padding-left: 10px;
+}
+
+.navbar-toggle {
+  max-height: 35px;
+}
+
+.navbar-default .navbar-collapse
+{
+    border-top:none;
+    box-shadow:none;
 }
