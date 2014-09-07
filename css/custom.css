@@ -97,3 +97,15 @@ body {
     background-color: #cc6633;
   }
 }
+
+.fc-time-grid-event > .fc-bg {
+  opacity:0.0;
+}
+
+.fc-agendaWeek-view .fc-content > .fc-time {
+  background-color: #c63;
+}
+
+.fc-event-container > a:visited {
+  color: #fff
+}
