@@ -57,14 +57,10 @@
       </div>
     </div><!-- /.container -->
   </nav>
-  <div class="jumbotron" id="top">
+  <div class="homepage-header" id="top">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Blake Bassett</h1>
-          <p class="lead">Software Engineering PhD Student @ UIUC</p>
-        </div>
-      </div>
+        <h1>Blake Bassett</h1>
+        <p class="lead">Software Engineering PhD Student @ UIUC</p>
     </div>
   </div>
 
@@ -160,7 +156,15 @@
       $(document).scroll(scrollCheck);
 
       // render publication list
-      bibtexify("pubs.bib", "pubTable", {"visualization":false});
+      bibtexify("pubs.bib", "pubTable", {"visualization":false}).then(function() {
+        console.log("trying to change a thing.");
+        var searchArea = $('#pubTable_filter');
+        searchArea.contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove();
+        var input = $('#pubTable_filter > input');
+        input.addClass('form-control');
+        input.before('<span class="input-group-addon"><span class="fa fa-search"></span></span>');
+        searchArea.addClass('input-group');
+      });
 
       // render calendar
       $('#calendar').fullCalendar({
@@ -178,9 +182,9 @@
         eventBackgroundColor: '#f94',
         eventBorderColor: '#e73',
         minTime: '08:00:00',
-        maxTime: '19:00:00',
+        maxTime: '21:00:00',
         slotDuration: '00:15:00',
-        scrollTime: '09:00:00'
+        scrollTime: '10:00:00'
       });
 
     });

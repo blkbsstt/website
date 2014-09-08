@@ -137,6 +137,42 @@ body {
 
 .navbar-default .navbar-collapse
 {
-    border-top:none;
-    box-shadow:none;
+  border-top:none;
+  box-shadow:none;
+}
+.homepage-header {
+  position:relative;
+  color:#fff;
+  text-align:left;
+  text-shadow:0 1px 0 rgba(0,0,0,.1);
+  background-color:#f94;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.homepage-header h1 {
+  font-size: 60px;
+}
+
+.homepage-header p {
+  font-size: 24px;
+}
+
+@media (max-width:768px) {
+  .homepage-header h1 {
+    font-size: 40px;
+  }
+
+  .homepage-header p {
+    font-size: 18px;
+  }
+}
+
+.dataTables-wrapper {
+  padding: 15px 0px;
+}
+
+.table-responsive {
+  border: none !important;
 }
