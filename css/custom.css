@@ -127,6 +127,10 @@ body {
   color: #fff
 }
 
+.fc-event {
+  min-height: 20px;
+}
+
 .navbar-label {
   padding-left: 10px;
 }
