@@ -169,9 +169,17 @@
           center:'',
           right:'agendaWeek,month'
         },
-        events: {
-            googleCalendarId: 'blkbsstt@gmail.com'
-        },
+        eventSources: [
+            {
+                googleCalendarId: 'blkbsstt@gmail.com'
+            },
+            {
+                googleCalendarId: 'ljsqh9p0oreeeh4tgt554213g4@group.calendar.google.com',
+                className: 'class-event',
+                backgroundColor: '#49f',
+                borderColor: '#37e'
+            }
+        ],
         weekends: false, // will hide Saturdays and Sundays
         defaultView: "agendaWeek",
         aspectRatio: 2.0,
