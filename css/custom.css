@@ -16,6 +16,10 @@ a:visited {
    color: #e73;
 }
 
+a:focus {
+   color: #e73;
+}
+
 body {
   position: relative;
 }
@@ -123,7 +127,15 @@ body {
   background-color: #e73;
 }
 
+.fc-agendaWeek-view .class-event .fc-content > .fc-time {
+  background-color: #37e;
+}
+
 .fc-event-container > a:visited {
+  color: #fff
+}
+
+.fc-event-container > a:focus {
   color: #fff
 }
 
